@@ -3,11 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>Davis Super Portfolio Site</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
             <div>
-                <img src="https://via.placeholder.com/150x50?text=Logo" alt="">
+                <img src="img/dwl-logo.png" alt="" id="title-logo">
                 <nav>
                     <ul>
                         <li><a href="index.html">Work</a></li>
@@ -18,16 +22,16 @@
             </div>
         </header>
         <main>
-            <div class="hero-section">
-                <div>
+            <div class="section" id="hero-section">
+                <div class="container">
                     <h1>Hi, my name is Davis Wilky Lau <br><span>I'm a UX researcher and designer from Los Angeles</span></h1>
                     <p>I'm a digital artist turned UX designer with a passion for cultivating ideas into fluid, beautiful user-centric designs</p>
                 </div>
             </div>
-            <div class="work-section">
-                <div>
+            <div class="section" id="work-section">
+                <div class="container">
                     <h2>My Work</h2>
-                    <div>
+                    <div class="row">
                         <div>
                             <picture>
                                 <source srcset="img/plutopay-mobile-image.jpg" media="(max-width:767px)">
@@ -35,7 +39,7 @@
                             </picture>
                         </div>
                         <div>
-                            <h3>PlutoPay</h3>
+                            <h2>PlutoPay</h2>
                             <p>PlutoPay is a digital finance & budgeting app that provides a simple and easy-to-use solution for managing finances while traveling</p>
                             <a href="#"></a>
                         </div>
@@ -44,11 +48,11 @@
             </div>
         </main>
         <footer id="contact">
-            <div>
+            <div id="contact-section" class="section">
                 <h2>Get in Touch</h2>
                 <p>Do you like my work and want to discuss opportunities? Please get in touch. Call:<a href="tel:+1911">+852 14523687</a> or Skype me at hello.careerfoundry. Prefer sending an email?</p>
                 <div>
-                    <a href="mailto:placeholderemail@gmail.com">Email me</a>
+                    <a href="mailto:placeholderemail@gmail.com" class="button contact">Email me</a>
                 </div>
                 <div>
                     <a href="LINKEDIN-URL" target="_blank">

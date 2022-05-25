@@ -1,0 +1,90 @@
+/* 
+primary grey: #F5F5F5
+primary red: #F05454
+primary blue: #30475E
+primary black #121212 */
+
+body{
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #121212;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+}
+  
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+  
+h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+
+img{
+    width: 100%;
+}
+
+#title-logo{
+    width: 50%;
+}
+
+a {
+    color: #F05454;
+    text-decoration: none; /* No underlining */
+  }
+a:hover, a:focus {
+    color: #30475E;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+
+
+  a:active { /* selected link */
+    color: #30475E;
+  }
+
+  .button {
+    display: inline-block; 
+    background-color: #F05454;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #F05454; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+
+  .button :hover{
+      opacity: 0.8;
+      text-decoration: none;
+      background-color: #30475E ;
+  }
+
+  .button.contact {
+    background-color: transparent;
+    color: #F05454;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+  }
+
+  .button.contact:hover {
+    background-color: #30475E;
+    color: #F5F5F5;
+    border: 2px solid #F5F5F5;
+  }
