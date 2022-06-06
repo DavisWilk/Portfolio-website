@@ -4,6 +4,9 @@ primary red: #F05454
 primary blue: #30475E
 primary black #121212 */
 
+* {
+  box-sizing: border-box;
+}
 body{
     background-color: #F5F5F5;
     font-family: 'Roboto', sans-serif;
@@ -13,27 +16,70 @@ body{
     color: #121212;
 }
 
+main{
+  padding-top: 120px;
+}
+
+header{
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid rgb(92, 92, 92);
+  position: fixed;
+  box-shadow: 0px 5px 15px -4px #000000;
+}
+
+footer{
+  width: 100%;
+  border: 2px solid white;
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+}
+
+
+nav > ul{
+  list-style: none;
+  padding: 0;
+}
+
+nav > ul > li{
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
 h1, h2, h3, h4 {
     line-height: 1.4;
 }
 
 h1 {
-    font-size: 2.75em;
+    font-size: 2.00em;
     font-weight: 700;
+    color: #F05454
 }
   
 h2 {
-    font-size: 2.25em;
+    font-size: 1.75em;
     font-weight: 700;
+    color: #F05454
 }
   
 h3 {
-    font-size: 1.75em;
+    font-size: 1.35em;
     font-weight: 400;
 }
 
 h4 {
-    font-size: 1.35em;
+    font-size: 1.15em;
     font-weight: 400;
 }
 
@@ -49,17 +95,26 @@ a {
     color: #F05454;
     text-decoration: none; /* No underlining */
   }
+
+a i {
+  margin: 20px;
+  margin-bottom: 0;
+}
 a:hover, a:focus {
     color: #30475E;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 
+a:visited{
+    color: #30475E;
+    text-decoration: underline;
+}
 
   a:active { /* selected link */
     color: #30475E;
   }
 
-  .button {
+.button {
     display: inline-block; 
     background-color: #F05454;
     color: #ffffff; /* needed to override the default link color */
@@ -70,7 +125,7 @@ a:hover, a:focus {
     transition: 0.2s opacity;
   }
 
-  .button :hover{
+  .button:hover{
       opacity: 0.8;
       text-decoration: none;
       background-color: #30475E ;
@@ -88,3 +143,37 @@ a:hover, a:focus {
     color: #F5F5F5;
     border: 2px solid #F5F5F5;
   }
+
+  /* Layout styling */
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .row{
+    margin: 25px o;
+  }
+
+  .logo{
+    max-width: 250px;
+  }
+
+  .hero h1{
+    text-align: center;
+    margin: 0;
+   }
+
+  .hero{
+    background-color: white;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    
+  }
+
+.row{
+  display: inline-block;
+}
+.column{
+  width: 50%;
+}
