@@ -17,13 +17,13 @@ body{
 }
 
 main{
-  padding-top: 120px;
+  padding-top: 105px;
 }
 
 header{
   background-color: white;
-  width: 100%;
   text-align: center;
+  width: 100%;
   padding: 10px 0;
   border-bottom: 2px solid rgb(92, 92, 92);
   position: fixed;
@@ -31,8 +31,8 @@ header{
 }
 
 footer{
-  width: 100%;
   border: 2px solid white;
+  text-align: center;
 }
 
 .socials{
@@ -87,7 +87,7 @@ img{
     width: 100%;
 }
 
-#title-logo{
+.logo{
     width: 50%;
 }
 
@@ -100,17 +100,18 @@ a i {
   margin: 20px;
   margin-bottom: 0;
 }
+
+a:visited{
+  color: #30475E;
+  text-decoration: underline;
+}
+
 a:hover, a:focus {
-    color: #30475E;
+    color: #F05454;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 
-a:visited{
-    color: #30475E;
-    text-decoration: underline;
-}
-
-  a:active { /* selected link */
+a:active { /* selected link */
     color: #30475E;
   }
 
@@ -122,7 +123,7 @@ a:visited{
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #F05454; /* width of the border, type, color */
-    transition: 0.2s opacity;
+    transition: 0.9s opacity;
   }
 
   .button:hover{
@@ -148,10 +149,13 @@ a:visited{
 
   .container {
     padding: 0 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .row{
-    margin: 25px o;
+    margin: 25px 0;
   }
 
   .logo{
@@ -168,12 +172,50 @@ a:visited{
     padding: 20px 0;
     display: inline-block;
     width: 100%;
-    
+    text-align: center;
   }
 
-.row{
-  display: inline-block;
+.hero span{
+  display: block;
+  font-size: 70%;
+  margin-top: .5em;
 }
-.column{
-  width: 50%;
+
+[class*="col-"]{
+  float: left;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 640px){
+  header{
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav{
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  main{
+    padding-top: 99px;
+  }
+  body{
+    font-size: 18px;
+  }
+  .col-md-6{
+    width: 50%;
+  }
+  .row::after{
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+
+}
+
+@media only screen and (min-width: 1440px){
+
 }
