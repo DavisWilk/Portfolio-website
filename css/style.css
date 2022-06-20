@@ -17,14 +17,13 @@ body{
 }
 
 main{
-  padding-top: 105px;
+  padding-top: 42px;
 }
 
 header{
   background-color: white;
-  text-align: center;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   border-bottom: 2px solid rgb(92, 92, 92);
   position: fixed;
   box-shadow: 0px 5px 15px -4px #000000;
@@ -44,17 +43,48 @@ footer{
 nav > ul{
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul > li{
-  display: inline-block;
-}
 
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
 }
 
 h1, h2, h3, h4 {
@@ -88,7 +118,7 @@ img{
 }
 
 .logo{
-    width: 50%;
+    max-width: 150px;
 }
 
 a {
@@ -159,7 +189,7 @@ a:active { /* selected link */
   }
 
   .logo{
-    max-width: 250px;
+    max-width: 150px;
   }
 
   .hero h1{
@@ -186,16 +216,34 @@ a:active { /* selected link */
   padding: 10px;
 }
 
-@media only screen and (min-width: 640px){
+@media only screen and (min-width: 641px){
   header{
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav{
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
+  nav > ul > li{
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
   main{
     padding-top: 99px;
   }
@@ -210,6 +258,7 @@ a:active { /* selected link */
     clear: both;
     display: table;
   }
+  
 }
 
 @media only screen and (min-width: 1024px){
