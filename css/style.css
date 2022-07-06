@@ -39,7 +39,6 @@ footer{
   justify-content: center;
 }
 
-
 nav > ul{
   list-style: none;
   padding: 0;
@@ -82,7 +81,7 @@ nav > ul > li > a {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: -19px;
   font-size: 20px;
   padding-right: 0;
 }
@@ -118,7 +117,8 @@ img{
 }
 
 .logo{
-    max-width: 150px;
+    max-width: 250px;
+    border: 2px solid black;
 }
 
 a {
@@ -189,7 +189,7 @@ a:active { /* selected link */
   }
 
   .logo{
-    max-width: 150px;
+    max-width: 250px;
   }
 
   .hero h1{
@@ -225,7 +225,7 @@ a:active { /* selected link */
   nav{
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 0;
   }
 
   nav > ul > li{
@@ -241,7 +241,7 @@ a:active { /* selected link */
   }
 
   nav > ul {
-    margin: 1em 0;
+    margin: 0;
   }
 
   main{
